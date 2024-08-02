@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  auth_service:
+    container_name: grpc_template
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "50051:50051"
